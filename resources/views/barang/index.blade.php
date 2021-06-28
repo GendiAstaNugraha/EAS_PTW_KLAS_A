@@ -23,10 +23,6 @@
 
 				<form action="/upload/proses" method="POST" enctype="multipart/form-data">
 					{{ csrf_field() }}
-	                <div class="form-group">
-						<b>Kode Barang</b>
-						<input type="text" class="form-control" name="kodebarang">
-					</div>
                     <div class="form-group">
 						<b>Nama Barang</b>
 						<input type="text" class="form-control" name="namabarang">

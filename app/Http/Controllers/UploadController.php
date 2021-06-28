@@ -31,7 +31,6 @@ class UploadController extends Controller
 		$file->move($tujuan_upload,$nama_file);
 
 		Gambar::create([
-		    'kode_barang' => $request->kodebarang,
 		    'nama_barang' => $request->namabarang,
 			'harga' => $request->hargabarang,
 			
@@ -40,6 +39,6 @@ class UploadController extends Controller
 			'stok' => $request->stok,
 		]);
 
-		return redirect()->back();
+		return redirect('admin')->with('success', 'Barang Berhasil Ditambahkan');
 	}
 }

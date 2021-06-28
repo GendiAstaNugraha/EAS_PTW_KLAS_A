@@ -6,7 +6,7 @@
             @foreach($barang as $p)
             <div class="col-md-4">
                 <div class="card">
-                  <a href="{{ url('/detail') }}"><img src="{{ url('/data_file/'.$p->file) }}" class="card-img-top" alt="...">
+                  <a href=""><img src="{{ url('/data_file/'.$p->file) }}" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">{{ $p->nama_barang }}</h5>
                     <p class="card-text">
@@ -16,7 +16,7 @@
                         </strong>{{ $p->stok }} <br>
                         <hr>
                     </p>
-                    <a href="{{ url('/detail') }}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Pesan</a>
+                    <a href="" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Pesan</a>
                   </div></a>
                 </div>
                 </div>

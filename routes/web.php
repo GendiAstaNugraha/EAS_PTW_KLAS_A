@@ -48,3 +48,6 @@ Route::get('/upload', 'App\Http\Controllers\UploadController@upload');
 Route::post('/upload/proses', 'App\Http\Controllers\UploadController@proses_upload');
 
 Route::get('/tampil', 'App\Http\Controllers\BarangController@tampil');
+
+Route::get('/user/keranjang', 'App\Http\Controllers\KeranjangController@index');
+Route::get('/detail', 'App\Http\Controllers\DetailController@index');
